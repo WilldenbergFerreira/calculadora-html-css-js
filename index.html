@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script lang="javaScript" src="calculadora.js"></script>
+    
 
     <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <form action=""name="calc">
         <div id="calculadora">
             <input type="text" id="visor" name="visor">
-            <div id="primeira">
+            <div>
                 <input type="button" value="7" class= "botao borda" onclick="botao(value)">
                 <input type="button" value="8" class= "botao borda" onclick="botao(value)">
                 <input type="button" value="9" class= "botao borda" onclick="botao(value)">
                 <input type="button" value="/" class= "botao borda" onclick="botao(value)">
+                <input type="button" value="DEL" classe="botao borda" onclick="excluinumero()">
             </div>
-                <div id="segunda">
+                <div>
                     <input type="button" value="4" class= "botao borda" onclick="botao(value)">
                     <input type="button" value="5" class= "botao borda" onclick="botao(value)">
                     <input type="button" value="6" class= "botao borda" onclick="botao(value)">
                     <input type="button" value="*" class= "botao borda" onclick="botao(value)">
+                    <input type="button" value="%" class= "botao borda" onclick="porcentagem()">
                  </div>   
-                <div id="terceira">
+                <div>
                     <input type="button" value="1" class= "botao borda" onclick="botao(value)">
                     <input type="button" value="2" class= "botao borda" onclick="botao(value)">
                     <input type="button" value="3" class= "botao borda" onclick="botao(value)">
                     <input type="button" value="-" class= "botao borda" onclick="botao(value)">
+                    <input type="button" value="MC" class= "botao borda" onclick="botao(value)">
                 </div>
-                <div id="quarta">
-                    <input type="button" value="c" class= "botao borda" onclick="reset()">
+                <div >
+                    <input id="reseta" type="button" value="c" class= "botao borda" onclick="reset()">
                     <input type="button" value="0" class= "botao borda" onclick="botao(value)">
-                    <input type="button" value="=" class= "botao borda" onclick="calcula()">
+                    <input type="button" value="." class= "botao borda" onclick="botao(value)">
                     <input type="button" value="+" class= "botao borda" onclick="botao(value)">
+                    <input id="igualdade" type="button" value="=" class= "botao borda" onclick="calcula()">
             </div>
         </div>
     </form>
