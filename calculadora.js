@@ -11,6 +11,3 @@ function calcula(){
     resultado = eval(valor);
     document.calc.visor. value = resultado
 }
-function excluinumero(){
-    valor = document.calc.visor.value = num - num;
-}
